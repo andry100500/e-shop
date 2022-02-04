@@ -1,0 +1,40 @@
+.sitemap-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: #C6005D;
+    line-height: 1.3;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.categories .subcategory {
+    padding-left: 23px;
+}
+
+.all-sitemap-links {
+    display: flex;
+}
+
+.categories, .other-links {
+    width: 50%;
+}
+
+.other, .pages, .blog {
+    margin-bottom: 15px;
+}
+
+.block-name {
+    margin-bottom: 4px;
+}

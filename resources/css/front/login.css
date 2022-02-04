@@ -1,0 +1,132 @@
+.login-register {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-register h1 {
+    margin-bottom: 35px;
+}
+
+/*-------------------------------tabs-----------------------------------*/
+
+.login-register .tabs {
+    text-align: left;
+    width: 405px;
+    margin: 0 auto 35px auto;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.login-register .tabs > input, .login-register .tabs > section {
+    display: none;
+}
+
+.login-register .tabs > label {
+    background: #a58f8f2b;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px 4px 0px 0px;
+    color: #515151;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    margin: 0 0 -1px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.login-register .tabs .tab-content {
+    padding: 40px 20px 15px 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 1px;
+}
+
+
+.login-register .tabs > input:checked + label {
+    background: white;
+    border-bottom: 1px solid white;
+    color: #515151;
+}
+
+#login:checked ~ #login-content, #register:checked ~ #register-content {
+    display: block;
+}
+
+
+/*-------------------------------fields-----------------------------------*/
+
+.login-register .fields {
+    margin-bottom: 40px;
+}
+
+.login-register .fields input {
+    padding: 6px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+.login-register .fields .field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.login-register .fields .field .name{
+    width: 105px;
+}
+.login-register .fields .field .input, .login-register .fields .field input {
+    width: 90%;
+}
+
+.login-register .fields input:hover {
+    border-color: #a58f8f;
+    transition-duration: 0.5s;
+}
+
+.login-register .fields input:focus {
+    box-shadow: 0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58);
+    border-color: #e8e8e8;
+}
+
+.login-register .fields .forgot-password {
+    margin-left: 90px;
+}
+
+.login-register .fields .forgot-password a {
+    font-size: 12px;
+}
+
+.login-register .fields .forgot-password a:hover {
+    color: #C6005D;
+    transition-duration: 0.3s;
+
+}
+
+/*----------------------btn-login-register-------------------------*/
+
+.login-register .btn-login-register {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-register .btn-login-register button {
+    border: none;
+    background: #f53881;
+    border-radius: 25px;
+    padding: 8px 24px;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.login-register .btn-login-register button:hover {
+    background: #DF236B;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transition-duration: 0.5s;
+}
+

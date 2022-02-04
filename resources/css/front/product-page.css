@@ -1,0 +1,391 @@
+.product-left-column {
+    display: flex;
+}
+
+.product-left-column, .product-right-column {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+
+/*----------------left-column-photo-----------------------*/
+
+.product-left-column .images {
+    display: flex;
+    max-height: 650px;
+    position: sticky;
+    top: 0;
+}
+
+.small-images {
+    display: flex;
+    flex-basis: 100px;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 8px;
+    margin-right: 15px;
+}
+
+.img-circle {
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.active {
+    border-color: #f53881 !important;
+}
+
+.img-circle:hover {
+    border-color: #A9A9A9;
+    transition-duration: 0.7s;
+}
+
+.main-product-image {
+    padding: 15px;
+}
+
+
+/*----------------right-column-h1-available-----------------------*/
+
+
+.main-content-product-page .container h1 {
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.available, .not-available {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 65px;
+    cursor: default;
+}
+
+.available {
+    background: #a7e8c572;
+    color: #2f9645e4;
+}
+
+.not-available {
+    background: #EDEDED;
+}
+
+.available i, .not-available i {
+    margin-right: 4px;
+    font-size: 15px;
+}
+
+.available i {
+    color: #2f9645e4;
+}
+
+
+/*----------------right-column-block-buy----------------------*/
+
+
+.block-buy {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 25px;
+}
+
+.product-price {
+    font-size: 32px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-right: 15px;
+}
+
+.button-buy {
+    border: none;
+    background: #f53881;
+    color: white;
+    border-radius: 25px;
+    padding: 11px 37px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.button-buy i {
+    color: white;
+    margin-right: 8px;
+}
+
+.button-buy:hover {
+    background: #DF236B;
+    box-shadow: 0px 0px 5px 4px rgba(247, 163, 195, 0.35),
+    0px 0px 5px 4px rgba(247, 163, 195, 0.35),
+    0px 0px 5px 4px rgba(247, 163, 195, 0.35),
+    0px 0px 5px 4px rgba(247, 163, 195, 0.35);
+    transition-duration: 0.5s;
+}
+
+.product-zakladki {
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-zakladki i {
+    font-size: 23px;
+    color: #a58f8f;
+}
+
+.product-zakladki:hover {
+    background: #ed0e5150;
+}
+
+
+/*----------------right-column-tabs-delivery-and-pay----------------------*/
+
+
+.product-delivery-and-pay {
+    margin-bottom: 35px;
+}
+
+.tabs > input, .tabs > section {
+    display: none;
+}
+
+.tabs > label {
+    background: #a58f8f2b;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px 4px 0px 0px;
+    color: #515151;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 0 -1px;
+    text-align: center;
+    min-width: 250px;
+}
+
+.tab-content {
+    border: 1px solid #e8e8e8;
+    border-radius: 1px;
+}
+
+.product-delivery-and-pay .tab-content {
+    padding: 20px 15px;
+}
+
+.tabs > input:checked + label {
+    background: white;
+    border-bottom: 1px solid white;
+    color: #515151;
+}
+
+#delivery:checked ~ #content-delivery, #pay:checked ~ #content-pay {
+    display: block;
+}
+
+.tabs ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.tabs ul li i {
+    font-size: 7px;
+    align-self: center;
+    margin-right: 7px;
+    color: #a58f8f;
+}
+
+
+/*----------------right-column-tabs-description-and-reviews----------------------*/
+
+
+.product-description-and-reviews .tab-content {
+    padding: 25px;
+}
+
+#description:checked ~ #content-description, #reviews:checked ~ #content-reviews {
+    display: block;
+}
+
+
+/*----------------tab-characteristics----------------------*/
+
+
+.characteristics-item {
+    margin-bottom: 25px;
+}
+
+.dotted-line {
+    border-bottom: 1px dotted #d2d2d2;
+    margin: 0 7px;
+    flex-grow: 1;
+}
+
+
+/*----------------tab-text-product---------------------*/
+
+
+.text-product p, li {
+    font-size: 14px;
+    line-height: 20px;
+    list-style: none;
+}
+
+.text-product ul li i {
+    font-size: 4px;
+}
+
+.text-product p, .text-product ul li:last-child {
+    margin-bottom: 16px;
+}
+
+
+/*----------------tab-review----------------------*/
+
+.btn-new-review {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.design-btn-new-review {
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    margin: 20px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #a58f8f;
+    color: white;
+}
+
+.design-btn-new-review:hover, .design-btn-new-review:focus {
+    box-shadow: 0px 0px 6px 1px darkgrey;
+    transition-duration: 0.2s;
+}
+
+.product-raiting-review {
+    margin-bottom: 25px;
+}
+
+.product-raiting-review i {
+    font-size: 17px;
+    margin-right: 3px;
+}
+
+.product-raiting-review i:hover, .product-raiting-review i:focus {
+    color: #fcba03;
+}
+
+
+/*-----------tab-new-review------------*/
+
+
+.product-new-review form {
+    padding: 20px;
+    box-shadow: 0px 0px 6px 1px darkgrey;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.product-new-review form input {
+    padding: 3px 3px 3px 5px;
+    margin-bottom: 20px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+}
+
+.product-new-review form textarea {
+    margin-bottom: 10px;
+    padding: 5px 2px 2px 5px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+}
+
+.product-new-review form input:focus, .product-new-review form textarea:focus {
+    border: 2px solid #a58f8f;
+}
+
+.product-new-review form button {
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    cursor: pointer;
+    background-color: #a58f8f;
+    color: white;
+}
+
+.product-new-review form button:hover, .product-new-review form button:focus {
+    box-shadow: 0px 0px 6px 1px darkgrey;
+    transition-duration: 0.2s;
+}
+
+/*-----------tab-done-review------------*/
+
+.product-done-review {
+    margin-bottom: 42px;
+}
+
+.name-user-product-done-review {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.done-product-raiting i {
+    color: #fcba03;
+    margin-bottom: 25px;
+}
+
+.text-product-done-review {
+    margin-bottom: 20px;
+}
+
+.text-product-done-review p {
+    line-height: 1.5;
+}
+
+.done-positive-and-negative-sides-review {
+    display: flex;
+    margin-left: 20px;
+}
+
+.done-positive-and-negative-sides-review p {
+    line-height: 1.2;
+}
+
+.done-positive-and-negative-sides-review i {
+    margin-right: 7px;
+    font-size: 12px;
+}
+
+/*Манипуляция с картинками*/
+
+.modal .prev-button, .modal .next-button, .modal .close-button{
+    background: #7B7B7B;
+    width: 50px;
+}
+
+.modal .prev-button {
+
+}
+
+.modal .prev-button {
+
+}
+
+.modal .close-button{
+    background: #7B7B7B;
+}
+
+

@@ -1,0 +1,80 @@
+.thanks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.thanks .bread-crumbs {
+    margin-bottom: 42px;
+}
+
+.thanks h1 {
+    margin-bottom: 30px;
+    letter-spacing: 0.8px;
+}
+
+/*----------------------------image--------------------------*/
+
+.thanks .image {
+    margin-bottom: 15px;
+}
+
+.thanks .heart {
+    position: relative;
+}
+
+.thanks .image .heart i {
+    font-size: 78px;
+    color: #C6005D;
+}
+
+.thanks .image .check {
+    position: relative;
+    left: 11px;
+    top: -51px;
+}
+
+.thanks .image .check i {
+    font-size: 32px;
+    color: #C6005D;
+}
+
+/*----------------------------text--------------------------*/
+
+.thanks .text {
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 55px;
+}
+
+.thanks .text p a {
+    color: #C6005D;
+}
+
+.thanks .text p a:hover {
+    color: #9A0047;
+}
+
+
+/*----------------------------button--------------------------*/
+
+.thanks .buy-yet {
+    margin-bottom: 65px;
+}
+
+.thanks .buy-yet button {
+    border: none;
+    background: #C6005D;
+    border-radius: 25px;
+    padding: 11px 24px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.thanks .buy-yet button:hover {
+    background: #DF236B;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transition-duration: 0.5s;
+}

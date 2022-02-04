@@ -1,0 +1,113 @@
+.footer {
+    background: #202020;
+    padding: 25px 7px 25px 7px;
+    border-top: 2px solid dimgray;
+}
+
+.footer-row-1, .footer-row-2 {
+    display: flex;
+}
+
+.information, .contacts, .dop-info, .personal-account, .attention, .stay-connection, .dont-copy {
+    flex-grow: 1;
+}
+
+
+.cont-footer {
+    display: block;
+}
+
+.cont-footer ul {
+    list-style: none;
+}
+
+.cont-footer a {
+    text-decoration: none;
+}
+
+.cont-footer a:hover {
+    color: #EDEDED;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+.cont-footer li, .cont-footer a, .cont-footer p {
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer-block-name {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-block-name p {
+    color: dimgray;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    cursor: default;
+}
+
+.footer-block-name i {
+    color: dimgray;
+    margin-right: 7px;
+    font-size: 13px;
+}
+
+.information, .contacts, .dop-info, .personal-account {
+    margin-bottom: 25px;
+}
+
+.stay-connection {
+    position: relative;
+}
+
+.stay-connection input {
+    margin-top: 9px;
+    width: 60%;
+    height: 25px;
+    border: transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 6px;
+    background: dimgray;
+}
+
+.stay-connection input:focus {
+    box-shadow: 0px 0px 7px -1px rgba(255, 71, 148, 0.58),
+    0px 0px 7px -1px rgba(255, 71, 148, 0.58),
+    0px 0px 7px -1px rgba(255, 71, 148, 0.58),
+    0px 0px 7px -1px rgba(255, 71, 148, 0.58);
+}
+
+.stay-connection input::placeholder {
+    color: #969A9D;
+}
+
+.stay-connection button {
+    position: absolute;
+    right: 220px;
+    bottom: 0px;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    background: #C6005D;
+    border: none;
+    border-radius: 3px;
+}
+
+.stay-connection button i {
+    color: white;
+}
+
+.stay-connection button:hover {
+    background: #9A0047;
+    transition-duration: 0.5s;
+}
+
+.dont-copy {
+    align-self: center;
+}

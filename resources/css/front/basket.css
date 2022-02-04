@@ -1,0 +1,293 @@
+.main-content {
+    /*display: flex;flex-direction: column;*/
+    margin-bottom: 25px;
+}
+
+.main-content h1, .bread-crumbs {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.content {
+    margin: 0 auto 25px auto;
+    max-width: 975px;
+}
+
+.products, .fields, .delivery-methods, .payment-methods, #basket .btn-checkout {
+    margin-bottom: 20px;
+}
+
+/*----------------------table, row-header, row-product------------------------*/
+
+.products table {
+    width: 100%;
+    border: 1px dotted #a58f8f;
+    border-radius: 2px;
+}
+
+.row-header th, #basket .product td {
+    border-bottom: 1px dotted #a58f8f;
+}
+
+.row-header .column, #basket .product .column, .total {
+    padding: 10px;
+}
+
+.row-header .column {
+    background: #F7F7F7;
+    color: #a58f8f;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+
+#basket .product .column {
+    text-align: center;
+}
+
+#basket .product a img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#basket .product .name a {
+    text-decoration: none;
+    color: #C6005D;
+}
+
+#basket .product .name a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------buttons in the table---------------------------*/
+
+#basket .product .count button {
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#basket .product .count i {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 5px;
+}
+
+#basket .product .count .minus i {
+    color: #C6005D;
+}
+
+#basket .product .count .plus i {
+    color: white;
+}
+
+#basket .product .count .minus {
+    background: white;
+    border: 1px solid #C6005D;
+}
+
+#basket .product .count .plus {
+    border: none;
+    background: #C6005D;
+}
+
+#basket .product .count .plus:hover {
+    background: #9A0047;
+    transition-duration: 0.5s;
+}
+
+#basket .product .count .minus:hover i {
+    background: #9A0047;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+/*-----------------------input in the table------------------------*/
+
+#basket .product .count input {
+    width: 20%;
+    height: 24px;
+    outline: none;
+    border: 1px solid #C6005D;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#basket .product .count input:focus {
+    box-shadow: 0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58);
+    border: none;
+}
+
+/*----------------------remove button----------------------*/
+
+.remove button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.remove button i {
+    color: #a58f8f;
+    font-size: 16px;
+}
+
+.remove button:hover i {
+    color: #E70D2C;
+    transition-duration: 0.5s;
+}
+
+/*-------------------total---------------------*/
+
+.total {
+    text-align: right;
+    border-bottom: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+/*-----------------order-data-------------------*/
+
+.order-data {
+    padding: 15px 25px;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.order-data h2, .order-data h3 {
+    margin-bottom: 15px;
+    color: #a58f8f;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/*-------------------Bayer Data------------------------*/
+
+.fields input {
+    margin-bottom: 10px;
+    padding: 6px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+}
+#basket .field .name{
+    width: 200px;
+    text-align: left;
+}
+.field .input, .field input {
+    width: 70%;
+}
+
+.fields input:hover, #basket .comment textarea:hover {
+    border-color: #a58f8f;
+    transition-duration: 0.5s;
+}
+
+.fields input:focus, #basket .comment textarea:focus {
+    box-shadow: 0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58),
+    0 0 7px -1px rgba(255, 71, 148, 0.58);
+    border-color: #e8e8e8;
+}
+
+/*------------------------Delivery Method, Payment Method---------------------*/
+
+.delivery-methods, .payment-methods, #basket .comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-methods label, .payment-methods label {
+    /*max-width: 200px;*/
+    cursor: pointer;
+}
+
+.delivery-methods input, .payment-methods input {
+    display: none;
+}
+
+.delivery-methods .style-radio, .payment-methods .style-radio {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #7B7B7B;
+    border-radius: 50%;
+}
+
+.delivery-methods input:checked + .style-radio::before, .payment-methods input:checked + .style-radio::before {
+    content: "";
+    position: absolute;
+    left: 3px; top: 3px; right: 3px; bottom: 3px;
+    background: #a58f8f;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+}
+
+.delivery-methods input:checked + .style-radio, .payment-methods input:checked + .style-radio {
+    border-color: #a58f8f;
+}
+
+.delivery-methods .style-radio:hover, .payment-methods .style-radio:hover {
+    border-color: #404040;
+    transition-duration: 0.5s;
+}
+
+.delivery-methods .style-radio, .payment-methods .style-radio {
+    margin-right: 5px;
+}
+
+/*--------------------------comment-basket textarea------------------------------*/
+
+#basket .comment {
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+#basket .comment label{
+    margin-bottom: 6px;
+    color: #a58f8f;
+    font-weight: bold;
+}
+
+#basket .comment textarea {
+    padding: 6px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#basket .btn-checkout {
+    text-align: center;
+}
+
+#basket .btn-checkout button {
+    border: none;
+    background: #f53881;
+    border-radius: 25px;
+    padding: 11px 24px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+#basket .btn-checkout button:hover {
+    background: #DF236B;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transition-duration: 0.5s;
+}

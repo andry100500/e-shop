@@ -1,0 +1,75 @@
+.main-content {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content a {
+    text-decoration: none;
+}
+
+.brands-list a {
+    color: #C6005D;
+    line-height: 1.3;
+}
+
+.main-content .brands-list a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------navigation------------------------*/
+
+.navigation {
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation a{
+    color: #515151;
+}
+
+.navigation .letter {
+    border: 1px solid #EDEDED;
+    margin-right: 5px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navigation div:hover {
+    background: #EDEDED;
+    transition-duration: 0.5s;
+}
+
+
+/*------------------------ brands-list, letter-brands -------------------------*/
+
+.brands-list .letter-header {
+    margin-bottom: 10px;
+}
+
+.brands-list .letter {
+    margin-bottom: 20px;
+}
+
+.brands-list .brand a {
+    line-height: 1.5;
+}
+
+.letter-brands {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.letter-brands .brand {
+    width: 25%;
+}

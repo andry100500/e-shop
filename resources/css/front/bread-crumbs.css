@@ -1,0 +1,23 @@
+.bread-crumbs {
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.bread-crumbs ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.bread-crumbs ul li a, .bread-crumbs ul li, .bread-crumbs-home i {
+    text-decoration: none;
+    color: #515151;
+    font-size: 13px;
+}
+
+.bread-crumbs ul li a, .bread-crumbs-home i {
+    color: #C4005C;
+}
+
+.bread-crumbs ul li a:hover {
+    text-decoration: underline;
+}

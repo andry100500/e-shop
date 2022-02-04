@@ -1,0 +1,42 @@
+.main-content h2 {
+    margin: 30px auto 15px;
+}
+
+.circle-categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+}
+
+.gray-circle {
+    background: #f7f7f7;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.gray-circle:hover {
+    background: none;
+    transition-duration: 0.5s;
+}
+
+.gray-circle a img {
+    padding: 20px;
+}
+
+.name-circle-category {
+    text-decoration: none;
+}
+
+.name-circle-category:hover {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+.circle-categories ul li {
+    margin-bottom: 20px;
+}

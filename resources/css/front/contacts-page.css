@@ -1,0 +1,80 @@
+.contacts .left-info-menu {
+    flex-basis: 300px;
+    background: #F7F7F7;
+    color: #515151;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+.contacts .main-info {
+    flex-basis: calc(100% - 300px);
+    padding: 10px 15px 0 15px;
+}
+
+.contacts .left-info-menu, .contacts .main-info {
+    margin-bottom: 40px;
+}
+
+.contacts .left-info-menu, .contacts .list-info-menu, .contacts .list-info-menu a {
+    padding: 10px;
+}
+
+.contacts .main-info h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/*-----------------left-info-menu----------------*/
+
+.contacts .left-info-menu h2 {
+    letter-spacing: 0.1px;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.contacts .list-info-menu a {
+    font-size: 15px;
+    line-height: 2.3;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+}
+
+.contacts .list-info-menu div:hover {
+    background: #EDEDED;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+/*------------------------info-----------------------*/
+
+.contacts .info {
+    display: flex;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.contacts .info .text, .contacts .info .map{
+    width: 50%;
+}
+
+.contacts .info .text {
+    padding: 20px 25px;
+}
+
+.contacts .info .map {
+    padding: 20px 20px 20px 0;
+}
+
+.contacts .info .text .name {
+    color: #C6005D;
+    font-weight: bold;
+}
+
+.contacts .info .text .block {
+    margin-bottom: 25px;
+}
+
+.contacts .info .text p {
+    line-height: 1.2;
+    text-align: justify;
+}

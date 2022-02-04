@@ -1,0 +1,30 @@
+.article-container {
+    max-width: 1000px !important;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.article-container .bread-crumbs, .article-container h1, .article-text h2, .article-text h3 {
+    text-align: center;
+}
+
+.bread-crumbs, .article-container, .article-container img, .article-container h1 {
+    margin-bottom: 20px;
+}
+
+.article-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-text p, li {
+    color: #515151;
+    font-size: 14px;
+    line-height: 1.5;
+    list-style: none;
+    text-align: justify;
+}
+
+.article-text h2, .article-text h3, .article-text p, .article-text ul {
+    margin-bottom: 15px;
+}
